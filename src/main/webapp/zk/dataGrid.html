@@ -1,0 +1,38 @@
+<#include "/common/zuiGrid_layout.html"/>
+<@layout>
+<script>
+	/* 初始化数据表格 */
+	$('table.datatable').datatable();
+</script>
+
+<!-- HTML 代码 -->
+<table class="table datatable">
+	<thead>
+	<tr>
+		<!-- 以下两列左侧固定 -->
+		<th>#</th>
+		<th>时间</th>
+
+		<!-- 以下三列中间可滚动 -->
+		<th class="flex-col">事件类型</th>
+		<th class="flex-col">描述</th>
+		<th class="flex-col">相关人物</th>
+
+		<!-- 以下列右侧固定 -->
+		<th>评分</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td>1</td>
+		<td>1333</td>
+		<td>1</td>
+		<td>1333</td>
+		<td>1</td>
+		<td>1333</td>
+	</tr>
+
+	</tbody>
+</table>
+
+</@layout>
