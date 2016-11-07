@@ -6,7 +6,7 @@
 	<#local endPage = currentPage + 4>
 	<#if (endPage > totalPage)><#local endPage = totalPage></#if>
 	
-	<div class="pagination">
+	<div class="pagination" style="float: right">
 			<#if (currentPage <= 8)>
 				<#local startPage = 1>
 			</#if>
@@ -23,7 +23,8 @@
 			<#if (currentPage > 8)>
 				<a href="${actionUrl}#{1}${urlParas!}">#{1}</a>
 				<a href="${actionUrl}#{2}${urlParas!}">#{2}</a>
-				<span class="gap">…</span>
+				<span class="gap"></span>
+				<span class="disabled prev_page">…</span>
 			</#if>
 			
 			<#list startPage..endPage as i>
